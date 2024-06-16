@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="349.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.muehle.StartScreenController">
+    <children>
+        <GridPane fx:id="startScreen" alignment="CENTER" hgap="10" vgap="10">
+            <Label fx:id="textLabel" text="Willkommen zu Mühle!" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+            <Label text="Name Spieler 1:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="player1" promptText="Name Spieler 1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Name Spieler 2:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="player2" promptText="Name Spieler 2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button onAction="#startGame" text="Spiel starten" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Button onAction="#showOptions" text="Optionen" visible="false" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Button onAction="#exitGame" text="Beenden" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" />
+                <ColumnConstraints halignment="LEFT" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+      <Label fx:id="winner" contentDisplay="CENTER" layoutX="309.0" layoutY="99.0" prefHeight="64.0" prefWidth="522.0" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>
